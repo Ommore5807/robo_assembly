@@ -1,0 +1,373 @@
+2023-08-09 10:55:18,889 INFO  AssemblyExportForm.cs: 309 - Saving URDF package to C:\summer 23 thesis om\robo_assembly
+2023-08-09 10:55:18,893 INFO  ExportHelper.cs: 147 - Beginning the export process
+2023-08-09 10:55:18,894 INFO  ExportHelper.cs: 153 - Creating package directories with name robo_assembly and save path C:\summer 23 thesis om
+2023-08-09 10:55:20,288 INFO  ExportHelper.cs: 162 - Creating CMakeLists.txt at C:\summer 23 thesis om\robo_assembly\CMakeLists.txt
+2023-08-09 10:55:20,289 INFO  ExportHelper.cs: 166 - Creating joint names config at C:\summer 23 thesis om\robo_assembly\config\joint_names_robo_assembly.yaml
+2023-08-09 10:55:20,290 INFO  ExportHelper.cs: 170 - Creating package.xml at C:\summer 23 thesis om\robo_assembly\package.xml
+2023-08-09 10:55:20,291 INFO  PackageXMLWriter.cs: 21 - Creating package.xml at C:\summer 23 thesis om\robo_assembly\package.xml
+2023-08-09 10:55:20,292 INFO  ExportHelper.cs: 177 - Creating RVIZ launch file in C:\summer 23 thesis om\robo_assembly\launch\
+2023-08-09 10:55:20,293 INFO  ExportHelper.cs: 182 - Creating Gazebo launch file in C:\summer 23 thesis om\robo_assembly\launch\
+2023-08-09 10:55:20,293 INFO  ExportHelper.cs: 187 - Saving existing STL preferences
+2023-08-09 10:55:20,294 INFO  ExportHelper.cs: 450 - Saving users preferences
+2023-08-09 10:55:20,294 INFO  ExportHelper.cs: 190 - Modifying STL preferences
+2023-08-09 10:55:20,294 INFO  ExportHelper.cs: 464 - Setting STL preferences
+2023-08-09 10:55:20,297 INFO  ExportHelper.cs: 196 - Found 0 hidden components 
+2023-08-09 10:55:20,297 INFO  ExportHelper.cs: 197 - Hiding all components
+2023-08-09 10:55:20,625 INFO  ExportHelper.cs: 204 - Beginning individual files export
+2023-08-09 10:55:20,626 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_chassis
+2023-08-09 10:55:20,627 INFO  ExportHelper.cs: 272 - Link mid_right_chassis has 3 children
+2023-08-09 10:55:20,627 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_hinge_UU
+2023-08-09 10:55:20,627 INFO  ExportHelper.cs: 272 - Link mid_right_hinge_UU has 1 children
+2023-08-09 10:55:20,627 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_hinge_UL
+2023-08-09 10:55:20,628 INFO  ExportHelper.cs: 272 - Link mid_right_hinge_UL has 1 children
+2023-08-09 10:55:20,628 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_tube_U
+2023-08-09 10:55:20,628 INFO  ExportHelper.cs: 272 - Link mid_right_tube_U has 1 children
+2023-08-09 10:55:20,629 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_hinge_LU
+2023-08-09 10:55:20,629 INFO  ExportHelper.cs: 272 - Link mid_right_hinge_LU has 1 children
+2023-08-09 10:55:20,629 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_hinge_LL
+2023-08-09 10:55:20,629 INFO  ExportHelper.cs: 272 - Link mid_right_hinge_LL has 1 children
+2023-08-09 10:55:20,630 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_tube_L
+2023-08-09 10:55:20,630 INFO  ExportHelper.cs: 272 - Link mid_right_tube_L has 1 children
+2023-08-09 10:55:20,630 INFO  ExportHelper.cs: 270 - Exporting link: mid_right_base
+2023-08-09 10:55:20,630 INFO  ExportHelper.cs: 272 - Link mid_right_base has 0 children
+2023-08-09 10:55:20,630 INFO  ExportHelper.cs: 317 - mid_right_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,631 INFO  ExportHelper.cs: 322 - mid_right_base: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:20,687 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_base.STL
+2023-08-09 10:55:20,737 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:20,737 INFO  ExportHelper.cs: 317 - mid_right_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,737 INFO  ExportHelper.cs: 322 - mid_right_tube_L: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:20,758 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_tube_L.STL
+2023-08-09 10:55:20,798 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:20,798 INFO  ExportHelper.cs: 317 - mid_right_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,798 INFO  ExportHelper.cs: 322 - mid_right_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:20,818 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_hinge_LL.STL
+2023-08-09 10:55:20,858 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:20,859 INFO  ExportHelper.cs: 317 - mid_right_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,859 INFO  ExportHelper.cs: 322 - mid_right_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:20,877 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_hinge_LU.STL
+2023-08-09 10:55:20,917 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:20,917 INFO  ExportHelper.cs: 317 - mid_right_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,917 INFO  ExportHelper.cs: 322 - mid_right_tube_U: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:20,936 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_tube_U.STL
+2023-08-09 10:55:20,980 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:20,981 INFO  ExportHelper.cs: 317 - mid_right_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:20,981 INFO  ExportHelper.cs: 322 - mid_right_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:21,000 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_hinge_UL.STL
+2023-08-09 10:55:21,038 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,039 INFO  ExportHelper.cs: 317 - mid_right_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 2-1>
+2023-08-09 10:55:21,039 INFO  ExportHelper.cs: 322 - mid_right_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators 2-1
+2023-08-09 10:55:21,055 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_hinge_UU.STL
+2023-08-09 10:55:21,095 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,096 INFO  ExportHelper.cs: 270 - Exporting link: front_right_chassis
+2023-08-09 10:55:21,096 INFO  ExportHelper.cs: 272 - Link front_right_chassis has 2 children
+2023-08-09 10:55:21,097 INFO  ExportHelper.cs: 270 - Exporting link: front_right_hinge_UU
+2023-08-09 10:55:21,097 INFO  ExportHelper.cs: 272 - Link front_right_hinge_UU has 1 children
+2023-08-09 10:55:21,097 INFO  ExportHelper.cs: 270 - Exporting link: front_right_hinge_UL
+2023-08-09 10:55:21,097 INFO  ExportHelper.cs: 272 - Link front_right_hinge_UL has 1 children
+2023-08-09 10:55:21,098 INFO  ExportHelper.cs: 270 - Exporting link: front_right_tube_U
+2023-08-09 10:55:21,098 INFO  ExportHelper.cs: 272 - Link front_right_tube_U has 1 children
+2023-08-09 10:55:21,099 INFO  ExportHelper.cs: 270 - Exporting link: front_right_hinge_LU
+2023-08-09 10:55:21,099 INFO  ExportHelper.cs: 272 - Link front_right_hinge_LU has 1 children
+2023-08-09 10:55:21,099 INFO  ExportHelper.cs: 270 - Exporting link: front_right_hinge_LL
+2023-08-09 10:55:21,099 INFO  ExportHelper.cs: 272 - Link front_right_hinge_LL has 1 children
+2023-08-09 10:55:21,100 INFO  ExportHelper.cs: 270 - Exporting link: front_right_tube_L
+2023-08-09 10:55:21,100 INFO  ExportHelper.cs: 272 - Link front_right_tube_L has 1 children
+2023-08-09 10:55:21,101 INFO  ExportHelper.cs: 270 - Exporting link: front_right_base
+2023-08-09 10:55:21,101 INFO  ExportHelper.cs: 272 - Link front_right_base has 0 children
+2023-08-09 10:55:21,101 INFO  ExportHelper.cs: 317 - front_right_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,101 INFO  ExportHelper.cs: 322 - front_right_base: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,230 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_base.STL
+2023-08-09 10:55:21,269 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,270 INFO  ExportHelper.cs: 317 - front_right_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,270 INFO  ExportHelper.cs: 322 - front_right_tube_L: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,294 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_tube_L.STL
+2023-08-09 10:55:21,336 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,337 INFO  ExportHelper.cs: 317 - front_right_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,337 INFO  ExportHelper.cs: 322 - front_right_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,358 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_hinge_LL.STL
+2023-08-09 10:55:21,404 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,404 INFO  ExportHelper.cs: 317 - front_right_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,404 INFO  ExportHelper.cs: 322 - front_right_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,426 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_hinge_LU.STL
+2023-08-09 10:55:21,470 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,471 INFO  ExportHelper.cs: 317 - front_right_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,471 INFO  ExportHelper.cs: 322 - front_right_tube_U: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,492 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_tube_U.STL
+2023-08-09 10:55:21,537 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,537 INFO  ExportHelper.cs: 317 - front_right_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,538 INFO  ExportHelper.cs: 322 - front_right_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,559 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_hinge_UL.STL
+2023-08-09 10:55:21,602 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,602 INFO  ExportHelper.cs: 317 - front_right_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:21,602 INFO  ExportHelper.cs: 322 - front_right_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:21,623 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_hinge_UU.STL
+2023-08-09 10:55:21,667 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,668 INFO  ExportHelper.cs: 270 - Exporting link: front_H_chassis
+2023-08-09 10:55:21,668 INFO  ExportHelper.cs: 272 - Link front_H_chassis has 1 children
+2023-08-09 10:55:21,669 INFO  ExportHelper.cs: 270 - Exporting link: front_left_chassis
+2023-08-09 10:55:21,669 INFO  ExportHelper.cs: 272 - Link front_left_chassis has 2 children
+2023-08-09 10:55:21,669 INFO  ExportHelper.cs: 270 - Exporting link: front_left_hinge_UU
+2023-08-09 10:55:21,670 INFO  ExportHelper.cs: 272 - Link front_left_hinge_UU has 1 children
+2023-08-09 10:55:21,670 INFO  ExportHelper.cs: 270 - Exporting link: front_left_hinge_UL
+2023-08-09 10:55:21,670 INFO  ExportHelper.cs: 272 - Link front_left_hinge_UL has 1 children
+2023-08-09 10:55:21,670 INFO  ExportHelper.cs: 270 - Exporting link: front_left_tube_U
+2023-08-09 10:55:21,671 INFO  ExportHelper.cs: 272 - Link front_left_tube_U has 1 children
+2023-08-09 10:55:21,671 INFO  ExportHelper.cs: 270 - Exporting link: front_left_hinge_LU
+2023-08-09 10:55:21,671 INFO  ExportHelper.cs: 272 - Link front_left_hinge_LU has 1 children
+2023-08-09 10:55:21,672 INFO  ExportHelper.cs: 270 - Exporting link: front_left_hinge_LL
+2023-08-09 10:55:21,674 INFO  ExportHelper.cs: 272 - Link front_left_hinge_LL has 1 children
+2023-08-09 10:55:21,674 INFO  ExportHelper.cs: 270 - Exporting link: front_left_tube_L
+2023-08-09 10:55:21,674 INFO  ExportHelper.cs: 272 - Link front_left_tube_L has 1 children
+2023-08-09 10:55:21,675 INFO  ExportHelper.cs: 270 - Exporting link: front_left_base
+2023-08-09 10:55:21,675 INFO  ExportHelper.cs: 272 - Link front_left_base has 0 children
+2023-08-09 10:55:21,675 INFO  ExportHelper.cs: 317 - front_left_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:21,675 INFO  ExportHelper.cs: 322 - front_left_base: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:21,881 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_base.STL
+2023-08-09 10:55:21,927 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,927 INFO  ExportHelper.cs: 317 - front_left_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:21,927 INFO  ExportHelper.cs: 322 - front_left_tube_L: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:21,951 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_tube_L.STL
+2023-08-09 10:55:21,997 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:21,998 INFO  ExportHelper.cs: 317 - front_left_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:21,998 INFO  ExportHelper.cs: 322 - front_left_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:22,023 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_hinge_LL.STL
+2023-08-09 10:55:22,074 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,075 INFO  ExportHelper.cs: 317 - front_left_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:22,075 INFO  ExportHelper.cs: 322 - front_left_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:22,099 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_hinge_LU.STL
+2023-08-09 10:55:22,146 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,147 INFO  ExportHelper.cs: 317 - front_left_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:22,147 INFO  ExportHelper.cs: 322 - front_left_tube_U: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:22,171 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_tube_U.STL
+2023-08-09 10:55:22,220 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,221 INFO  ExportHelper.cs: 317 - front_left_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:22,221 INFO  ExportHelper.cs: 322 - front_left_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:22,246 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_hinge_UL.STL
+2023-08-09 10:55:22,293 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,294 INFO  ExportHelper.cs: 317 - front_left_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:22,294 INFO  ExportHelper.cs: 322 - front_left_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:22,319 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_hinge_UU.STL
+2023-08-09 10:55:22,371 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,372 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_chassis
+2023-08-09 10:55:22,372 INFO  ExportHelper.cs: 272 - Link mid_left_chassis has 2 children
+2023-08-09 10:55:22,372 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_hinge_UU
+2023-08-09 10:55:22,373 INFO  ExportHelper.cs: 272 - Link mid_left_hinge_UU has 1 children
+2023-08-09 10:55:22,373 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_hinge_UL
+2023-08-09 10:55:22,373 INFO  ExportHelper.cs: 272 - Link mid_left_hinge_UL has 1 children
+2023-08-09 10:55:22,374 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_tube_U
+2023-08-09 10:55:22,374 INFO  ExportHelper.cs: 272 - Link mid_left_tube_U has 1 children
+2023-08-09 10:55:22,374 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_hinge_LU
+2023-08-09 10:55:22,375 INFO  ExportHelper.cs: 272 - Link mid_left_hinge_LU has 1 children
+2023-08-09 10:55:22,375 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_hinge_LL
+2023-08-09 10:55:22,375 INFO  ExportHelper.cs: 272 - Link mid_left_hinge_LL has 1 children
+2023-08-09 10:55:22,376 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_tube_L
+2023-08-09 10:55:22,376 INFO  ExportHelper.cs: 272 - Link mid_left_tube_L has 1 children
+2023-08-09 10:55:22,376 INFO  ExportHelper.cs: 270 - Exporting link: mid_left_base
+2023-08-09 10:55:22,377 INFO  ExportHelper.cs: 272 - Link mid_left_base has 0 children
+2023-08-09 10:55:22,377 INFO  ExportHelper.cs: 317 - mid_left_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,377 INFO  ExportHelper.cs: 322 - mid_left_base: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,491 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_base.STL
+2023-08-09 10:55:22,536 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,537 INFO  ExportHelper.cs: 317 - mid_left_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,537 INFO  ExportHelper.cs: 322 - mid_left_tube_L: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,565 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_tube_L.STL
+2023-08-09 10:55:22,612 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,613 INFO  ExportHelper.cs: 317 - mid_left_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,613 INFO  ExportHelper.cs: 322 - mid_left_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,641 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_hinge_LL.STL
+2023-08-09 10:55:22,695 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,695 INFO  ExportHelper.cs: 317 - mid_left_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,696 INFO  ExportHelper.cs: 322 - mid_left_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,724 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_hinge_LU.STL
+2023-08-09 10:55:22,775 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,776 INFO  ExportHelper.cs: 317 - mid_left_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,776 INFO  ExportHelper.cs: 322 - mid_left_tube_U: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,804 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_tube_U.STL
+2023-08-09 10:55:22,856 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,857 INFO  ExportHelper.cs: 317 - mid_left_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,857 INFO  ExportHelper.cs: 322 - mid_left_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,886 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_hinge_UL.STL
+2023-08-09 10:55:22,936 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:22,937 INFO  ExportHelper.cs: 317 - mid_left_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:22,937 INFO  ExportHelper.cs: 322 - mid_left_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:22,966 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_hinge_UU.STL
+2023-08-09 10:55:23,026 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,027 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_chassis
+2023-08-09 10:55:23,027 INFO  ExportHelper.cs: 272 - Link rear_left_chassis has 2 children
+2023-08-09 10:55:23,028 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_hinge_UU
+2023-08-09 10:55:23,028 INFO  ExportHelper.cs: 272 - Link rear_left_hinge_UU has 1 children
+2023-08-09 10:55:23,028 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_hinge_UL
+2023-08-09 10:55:23,029 INFO  ExportHelper.cs: 272 - Link rear_left_hinge_UL has 1 children
+2023-08-09 10:55:23,029 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_tube_U
+2023-08-09 10:55:23,029 INFO  ExportHelper.cs: 272 - Link rear_left_tube_U has 1 children
+2023-08-09 10:55:23,030 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_hinge_LU
+2023-08-09 10:55:23,030 INFO  ExportHelper.cs: 272 - Link rear_left_hinge_LU has 1 children
+2023-08-09 10:55:23,030 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_hinge_LL
+2023-08-09 10:55:23,031 INFO  ExportHelper.cs: 272 - Link rear_left_hinge_LL has 1 children
+2023-08-09 10:55:23,031 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_tube_L
+2023-08-09 10:55:23,031 INFO  ExportHelper.cs: 272 - Link rear_left_tube_L has 1 children
+2023-08-09 10:55:23,032 INFO  ExportHelper.cs: 270 - Exporting link: rear_left_base
+2023-08-09 10:55:23,032 INFO  ExportHelper.cs: 272 - Link rear_left_base has 0 children
+2023-08-09 10:55:23,032 INFO  ExportHelper.cs: 317 - rear_left_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,032 INFO  ExportHelper.cs: 322 - rear_left_base: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,151 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_base.STL
+2023-08-09 10:55:23,204 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,205 INFO  ExportHelper.cs: 317 - rear_left_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,205 INFO  ExportHelper.cs: 322 - rear_left_tube_L: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,237 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_tube_L.STL
+2023-08-09 10:55:23,304 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,304 INFO  ExportHelper.cs: 317 - rear_left_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,305 INFO  ExportHelper.cs: 322 - rear_left_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,337 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_hinge_LL.STL
+2023-08-09 10:55:23,391 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,392 INFO  ExportHelper.cs: 317 - rear_left_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,396 INFO  ExportHelper.cs: 322 - rear_left_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,454 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_hinge_LU.STL
+2023-08-09 10:55:23,507 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,508 INFO  ExportHelper.cs: 317 - rear_left_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,508 INFO  ExportHelper.cs: 322 - rear_left_tube_U: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,539 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_tube_U.STL
+2023-08-09 10:55:23,603 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,604 INFO  ExportHelper.cs: 317 - rear_left_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,604 INFO  ExportHelper.cs: 322 - rear_left_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,637 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_hinge_UL.STL
+2023-08-09 10:55:23,690 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,691 INFO  ExportHelper.cs: 317 - rear_left_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,691 INFO  ExportHelper.cs: 322 - rear_left_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,722 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_hinge_UU.STL
+2023-08-09 10:55:23,775 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,776 INFO  ExportHelper.cs: 270 - Exporting link: rear_H_chassis
+2023-08-09 10:55:23,777 INFO  ExportHelper.cs: 272 - Link rear_H_chassis has 0 children
+2023-08-09 10:55:23,777 INFO  ExportHelper.cs: 317 - rear_H_chassis: Exporting STL with coordinate frame Origin_rear_H_chassis_j
+2023-08-09 10:55:23,777 INFO  ExportHelper.cs: 322 - rear_H_chassis: Reference geometry name 
+2023-08-09 10:55:23,811 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_H_chassis.STL
+2023-08-09 10:55:23,867 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,868 INFO  ExportHelper.cs: 317 - rear_left_chassis: Exporting STL with coordinate frame Coordinate System1 <robot leg  with 2 same linear actuators 6-1>
+2023-08-09 10:55:23,868 INFO  ExportHelper.cs: 322 - rear_left_chassis: Reference geometry name robot leg  with 2 same linear actuators 6-1
+2023-08-09 10:55:23,899 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_left_chassis.STL
+2023-08-09 10:55:23,953 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:23,954 INFO  ExportHelper.cs: 317 - mid_left_chassis: Exporting STL with coordinate frame Coordinate System1 <robot leg  with 2 same linear actuators 5-1>
+2023-08-09 10:55:23,954 INFO  ExportHelper.cs: 322 - mid_left_chassis: Reference geometry name robot leg  with 2 same linear actuators 5-1
+2023-08-09 10:55:23,986 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_left_chassis.STL
+2023-08-09 10:55:24,036 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,036 INFO  ExportHelper.cs: 317 - front_left_chassis: Exporting STL with coordinate frame Coordinate System1 <robot leg  with 2 same linear actuators 4-1>
+2023-08-09 10:55:24,037 INFO  ExportHelper.cs: 322 - front_left_chassis: Reference geometry name robot leg  with 2 same linear actuators 4-1
+2023-08-09 10:55:24,068 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_left_chassis.STL
+2023-08-09 10:55:24,116 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,116 INFO  ExportHelper.cs: 317 - front_H_chassis: Exporting STL with coordinate frame Origin_front_H_chassis_j
+2023-08-09 10:55:24,116 INFO  ExportHelper.cs: 322 - front_H_chassis: Reference geometry name 
+2023-08-09 10:55:24,147 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_H_chassis.STL
+2023-08-09 10:55:24,191 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,192 INFO  ExportHelper.cs: 317 - front_right_chassis: Exporting STL with coordinate frame Coordinate System1 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:24,192 INFO  ExportHelper.cs: 322 - front_right_chassis: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:24,224 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\front_right_chassis.STL
+2023-08-09 10:55:24,274 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,275 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_chassis
+2023-08-09 10:55:24,276 INFO  ExportHelper.cs: 272 - Link rear_right_chassis has 1 children
+2023-08-09 10:55:24,276 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_hinge_UU
+2023-08-09 10:55:24,276 INFO  ExportHelper.cs: 272 - Link rear_right_hinge_UU has 1 children
+2023-08-09 10:55:24,277 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_hinge_UL
+2023-08-09 10:55:24,277 INFO  ExportHelper.cs: 272 - Link rear_right_hinge_UL has 1 children
+2023-08-09 10:55:24,277 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_tube_U
+2023-08-09 10:55:24,277 INFO  ExportHelper.cs: 272 - Link rear_right_tube_U has 1 children
+2023-08-09 10:55:24,278 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_hinge_LU
+2023-08-09 10:55:24,278 INFO  ExportHelper.cs: 272 - Link rear_right_hinge_LU has 1 children
+2023-08-09 10:55:24,278 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_hinge_LL
+2023-08-09 10:55:24,278 INFO  ExportHelper.cs: 272 - Link rear_right_hinge_LL has 1 children
+2023-08-09 10:55:24,279 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_tube_L
+2023-08-09 10:55:24,279 INFO  ExportHelper.cs: 272 - Link rear_right_tube_L has 1 children
+2023-08-09 10:55:24,279 INFO  ExportHelper.cs: 270 - Exporting link: rear_right_base
+2023-08-09 10:55:24,279 INFO  ExportHelper.cs: 272 - Link rear_right_base has 0 children
+2023-08-09 10:55:24,280 INFO  ExportHelper.cs: 317 - rear_right_base: Exporting STL with coordinate frame Coordinate System13 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,280 INFO  ExportHelper.cs: 322 - rear_right_base: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,352 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_base.STL
+2023-08-09 10:55:24,405 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,406 INFO  ExportHelper.cs: 317 - rear_right_tube_L: Exporting STL with coordinate frame Coordinate System5 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,406 INFO  ExportHelper.cs: 322 - rear_right_tube_L: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,439 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_tube_L.STL
+2023-08-09 10:55:24,492 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,493 INFO  ExportHelper.cs: 317 - rear_right_hinge_LL: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,493 INFO  ExportHelper.cs: 322 - rear_right_hinge_LL: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,527 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_hinge_LL.STL
+2023-08-09 10:55:24,586 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,587 INFO  ExportHelper.cs: 317 - rear_right_hinge_LU: Exporting STL with coordinate frame Coordinate System3 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,587 INFO  ExportHelper.cs: 322 - rear_right_hinge_LU: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,621 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_hinge_LU.STL
+2023-08-09 10:55:24,676 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,677 INFO  ExportHelper.cs: 317 - rear_right_tube_U: Exporting STL with coordinate frame Coordinate System4 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,677 INFO  ExportHelper.cs: 322 - rear_right_tube_U: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,709 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_tube_U.STL
+2023-08-09 10:55:24,768 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,769 INFO  ExportHelper.cs: 317 - rear_right_hinge_UL: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators-1>
+2023-08-09 10:55:24,769 INFO  ExportHelper.cs: 322 - rear_right_hinge_UL: Reference geometry name robot leg  with 2 same linear actuators-1
+2023-08-09 10:55:24,801 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_hinge_UL.STL
+2023-08-09 10:55:24,863 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,864 INFO  ExportHelper.cs: 317 - rear_right_hinge_UU: Exporting STL with coordinate frame Coordinate System2 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,864 INFO  ExportHelper.cs: 322 - rear_right_hinge_UU: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,897 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_hinge_UU.STL
+2023-08-09 10:55:24,954 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:24,955 INFO  ExportHelper.cs: 317 - rear_right_chassis: Exporting STL with coordinate frame Coordinate System1 <robot leg  with 2 same linear actuators 3-1>
+2023-08-09 10:55:24,955 INFO  ExportHelper.cs: 322 - rear_right_chassis: Reference geometry name robot leg  with 2 same linear actuators 3-1
+2023-08-09 10:55:24,987 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\rear_right_chassis.STL
+2023-08-09 10:55:25,039 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:25,040 INFO  ExportHelper.cs: 317 - mid_right_chassis: Exporting STL with coordinate frame Coordinate System5
+2023-08-09 10:55:25,040 INFO  ExportHelper.cs: 322 - mid_right_chassis: Reference geometry name 
+2023-08-09 10:55:25,073 INFO  ExportHelper.cs: 330 - Saving STL to C:\summer 23 thesis om\robo_assembly\meshes\mid_right_chassis.STL
+2023-08-09 10:55:25,127 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2023-08-09 10:55:25,128 INFO  ExportHelper.cs: 145 - Showing all components except previously hidden components
+2023-08-09 10:55:27,157 INFO  ExportHelper.cs: 145 - Resetting STL preferences
+2023-08-09 10:55:27,157 INFO  ExportHelper.cs: 478 - Returning STL preferences to user preferences
+2023-08-09 10:55:27,158 INFO  ExportHelper.cs: 228 - Writing URDF file to C:\summer 23 thesis om\robo_assembly\urdf\robo_assembly.urdf
+2023-08-09 10:55:27,160 INFO  CSVImportExport.cs: 32 - Writing CSV file C:\summer 23 thesis om\robo_assembly\urdf\robo_assembly.csv
+2023-08-09 10:55:27,160 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,160 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,161 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,161 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,161 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,161 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,162 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,164 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,164 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,164 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,164 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,164 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,165 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,165 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,165 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,165 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,165 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,166 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,166 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,166 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,166 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,166 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,167 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,167 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,167 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,167 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,167 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,168 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,168 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,168 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,168 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,168 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,169 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,169 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,169 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,169 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,169 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,170 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,170 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,170 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,170 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,170 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,171 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,172 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,172 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2023-08-09 10:55:27,172 INFO  ExportHelper.cs: 234 - Copying log file
+2023-08-09 10:55:27,172 INFO  ExportHelper.cs: 439 - Copying C:\Users\ommore5807\sw2urdf_logs\sw2urdf.log to C:\summer 23 thesis om\robo_assembly\export.log

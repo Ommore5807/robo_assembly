@@ -1,0 +1,2704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robo_assembly">
+  <link
+    name="mid_right_chassis">
+    <inertial>
+      <origin
+        xyz="-1.01904958862805 0.450918359101978 2.5500260202222"
+        rpy="0 0 0" />
+      <mass
+        value="0.664323169148694" />
+      <inertia
+        ixx="0.124497537684337"
+        ixy="1.034403791303E-07"
+        ixz="3.29978112885732E-09"
+        iyy="0.000272415804836353"
+        iyz="1.06181136709898E-05"
+        izz="0.124497811349337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="mid_right_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001226953461 -0.0538797737282947 0.00407758217856857"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216376" />
+      <inertia
+        ixx="2.15475302244514E-05"
+        ixy="4.08560226236057E-09"
+        ixz="3.50399838360207E-11"
+        iyy="2.48420344050463E-06"
+        iyz="4.38826489428306E-07"
+        izz="2.39156461358389E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="-1.018462884125 0.113190193358899 2.52518148974056"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_chassis" />
+    <child
+      link="mid_right_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_right_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068498503053 0.0187349832529327 -0.0407234504551954"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149562464353173" />
+      <inertia
+        ixx="2.77382899483782E-05"
+        ixy="6.5353775443647E-08"
+        ixz="-1.41295041733475E-07"
+        iyy="2.61494553327382E-05"
+        iyz="9.67138676781448E-06"
+        izz="6.47197939431066E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_hinge_UU" />
+    <child
+      link="mid_right_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="mid_right_tube_U">
+    <inertial>
+      <origin
+        xyz="1.39309502822371E-08 -0.000642622392016623 0.00173034736404198"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041912" />
+      <inertia
+        ixx="0.0288040348370685"
+        ixy="1.02559620995903E-10"
+        ixz="9.55764912620011E-10"
+        iyy="0.025315686421915"
+        iyz="0.00938951254741977"
+        izz="0.00352488886753978" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999964 0.252035396430084 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_hinge_UL" />
+    <child
+      link="mid_right_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_right_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000588084340783279 -0.0149378981244559 0.0519264313850381"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124080543656936" />
+      <inertia
+        ixx="2.15480311497022E-05"
+        ixy="1.42460076220513E-09"
+        ixz="-3.7426146919633E-09"
+        iyy="2.16045137129991E-05"
+        iyz="6.66316691649574E-06"
+        izz="4.79656411004929E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875001046 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_tube_U" />
+    <child
+      link="mid_right_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_right_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162440142048 -0.022221143447934 -0.0389713360851884"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300100783799" />
+      <inertia
+        ixx="2.77317572144236E-05"
+        ixy="-7.69471574354079E-08"
+        ixz="-1.35726939401195E-07"
+        iyy="2.22963751213896E-05"
+        iyz="-1.24251025267636E-05"
+        izz="1.03187746917861E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_hinge_LU" />
+    <child
+      link="mid_right_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="mid_right_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.4621905797263E-08 -0.00513048159933427 -0.00759988253479726"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197643" />
+      <inertia
+        ixx="0.0297078291883953"
+        ixy="1.92332160457583E-09"
+        ixz="-3.37902679153857E-10"
+        iyy="0.0204240923796497"
+        iyz="-0.0137570481405995"
+        izz="0.00932114600736387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.00059077337500113 -0.390345036110258 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_hinge_LL" />
+    <child
+      link="mid_right_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_right_base">
+    <inertial>
+      <origin
+        xyz="4.9960036108132E-15 -4.92185453663252E-05 -7.29412397675322E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526659250823883" />
+      <inertia
+        ixx="1.57167590827313E-06"
+        ixy="7.54737487274673E-23"
+        ixz="1.11846537621423E-22"
+        iyy="1.66436600945583E-06"
+        iyz="1.37354397779592E-07"
+        izz="1.7752168511426E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_right_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_tube_L" />
+    <child
+      link="mid_right_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_chassis">
+    <inertial>
+      <origin
+        xyz="4.41137195172914E-06 0.000918359101978461 2.60202222648331E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.664323169148694" />
+      <inertia
+        ixx="0.124497537684337"
+        ixy="1.03440379130023E-07"
+        ixz="3.29978112885834E-09"
+        iyy="0.000272415804836353"
+        iyz="1.06181136709908E-05"
+        izz="0.124497811349337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_chassis_j"
+    type="fixed">
+    <origin
+      xyz="-1.019054 -1.05 2.54999999999993"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_chassis" />
+    <child
+      link="front_right_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001226959789 -0.0538797737282939 0.00407758217856746"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216378" />
+      <inertia
+        ixx="2.15475302244527E-05"
+        ixy="4.08560226185081E-09"
+        ixz="3.5039983913455E-11"
+        iyy="2.48420344050461E-06"
+        iyz="4.38826489428281E-07"
+        izz="2.39156461358403E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="0.000591115875000159 -0.336809806641101 -0.024818510259375"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_chassis" />
+    <child
+      link="front_right_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068636118417 0.0187349879173361 -0.0407234626933697"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149562489565371" />
+      <inertia
+        ixx="2.7738305323787E-05"
+        ixy="6.53538296215078E-08"
+        ixz="-1.41295179953754E-07"
+        iyy="2.61494686866927E-05"
+        iyz="9.67139193493774E-06"
+        izz="6.47198136297934E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_hinge_UU" />
+    <child
+      link="front_right_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="front_right_tube_U">
+    <inertial>
+      <origin
+        xyz="1.39309409563637E-08 -0.000642623369216666 0.0017303470087181"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041884" />
+      <inertia
+        ixx="0.0288040348348786"
+        ixy="1.0255963424578E-10"
+        ixz="9.55764865904061E-10"
+        iyy="0.0253156864476459"
+        iyz="0.00938951251461396"
+        izz="0.00352488883961894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999964 0.252035396430084 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_hinge_UL" />
+    <child
+      link="front_right_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000588084340789163 -0.0149379000013078 0.0519264306813538"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124080543656945" />
+      <inertia
+        ixx="2.15480311497035E-05"
+        ixy="1.42460075654842E-09"
+        ixz="-3.74261469350478E-09"
+        iyy="2.16045137326264E-05"
+        iyz="6.66316689174316E-06"
+        izz="4.79656409042434E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875001046 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_tube_U" />
+    <child
+      link="front_right_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162331474751 -0.0222211447993055 -0.0389713358302164"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300118627485" />
+      <inertia
+        ixx="2.7731757510046E-05"
+        ixy="-7.69471635966757E-08"
+        ixz="-1.35726947664422E-07"
+        iyy="2.22963747944102E-05"
+        iyz="-1.24251026830661E-05"
+        izz="1.03187743356159E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_hinge_LU" />
+    <child
+      link="front_right_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="front_right_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.46219145680249E-08 -0.00513048443592923 -0.00759988268388101"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197643" />
+      <inertia
+        ixx="0.0297078291872728"
+        ixy="1.92332160510053E-09"
+        ixz="-3.37902686220421E-10"
+        iyy="0.0204240923383626"
+        iyz="-0.0137570481564283"
+        izz="0.0093211460475284" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.00059077337500113 -0.390345036110258 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_hinge_LL" />
+    <child
+      link="front_right_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_base">
+    <inertial>
+      <origin
+        xyz="-3.44169137633799E-15 -4.92225282653358E-05 -7.29412381295091E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526659250823869" />
+      <inertia
+        ixx="1.57167590827308E-06"
+        ixy="1.6735813200145E-23"
+        ixz="2.47803902844208E-23"
+        iyy="1.66436600986032E-06"
+        iyz="1.37354397942838E-07"
+        izz="1.77521685073805E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_right_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_tube_L" />
+    <child
+      link="front_right_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_H_chassis">
+    <inertial>
+      <origin
+        xyz="0 2.22044604925031E-16 0.390400000000003"
+        rpy="0 0 0" />
+      <mass
+        value="0.887094999999992" />
+      <inertia
+        ixx="0.29588016359803"
+        ixy="-2.07539418893581E-20"
+        ixz="-3.51367122001287E-19"
+        iyy="0.29588016359803"
+        iyz="1.59026852454419E-17"
+        izz="0.000363660529397912" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_H_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_H_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_H_chassis_j"
+    type="fixed">
+    <origin
+      xyz="0.628654 -0.73095 0"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="front_right_chassis" />
+    <child
+      link="front_H_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_chassis">
+    <inertial>
+      <origin
+        xyz="4.41137195172914E-06 0.000918359101978461 2.60202222650552E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.664323169148684" />
+      <inertia
+        ixx="0.124497537684335"
+        ixy="1.03440379129073E-07"
+        ixz="3.29978112884445E-09"
+        iyy="0.000272415804836349"
+        iyz="1.06181136709904E-05"
+        izz="0.124497811349336" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_chassis_j"
+    type="fixed">
+    <origin
+      xyz="-0.73095 0 1.409446"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="front_H_chassis" />
+    <child
+      link="front_left_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001227031176 -0.0538797737283048 0.0040775821785668"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216344" />
+      <inertia
+        ixx="2.15475302244473E-05"
+        ixy="4.08560226319358E-09"
+        ixz="3.50399837365131E-11"
+        iyy="2.48420344050373E-06"
+        iyz="4.38826489427615E-07"
+        izz="2.39156461358343E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="0.000591115875000048 -0.336809806641101 -0.024818510259375"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_chassis" />
+    <child
+      link="front_left_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068636187917 0.0187349879184519 -0.0407234626928148"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149562489565401" />
+      <inertia
+        ixx="2.77383053237921E-05"
+        ixy="6.53538296214576E-08"
+        ixz="-1.41295179953754E-07"
+        iyy="2.61494686867022E-05"
+        iyz="9.67139193493421E-06"
+        izz="6.47198136297507E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_hinge_UU" />
+    <child
+      link="front_left_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="front_left_tube_U">
+    <inertial>
+      <origin
+        xyz="1.39308820035211E-08 -0.000642623368260986 0.00173034700918084"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041863" />
+      <inertia
+        ixx="0.0288040348348771"
+        ixy="1.02559629007935E-10"
+        ixz="9.55764878494074E-10"
+        iyy="0.0253156864476499"
+        iyz="0.0093895125146074"
+        izz="0.00352488883961341" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999853 0.252035396430084 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_hinge_UL" />
+    <child
+      link="front_left_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000588084340819028 -0.0149379000005395 0.0519264306818019"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124080543656926" />
+      <inertia
+        ixx="2.15480311497011E-05"
+        ixy="1.42460075677429E-09"
+        ixz="-3.74261469450015E-09"
+        iyy="2.16045137326273E-05"
+        iyz="6.6631668917379E-06"
+        izz="4.79656409041984E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875000824 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_tube_U" />
+    <child
+      link="front_left_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162331492625 -0.0222211447985849 -0.0389713358297204"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300118627532" />
+      <inertia
+        ixx="2.77317575100516E-05"
+        ixy="-7.69471635967437E-08"
+        ixz="-1.35726947664432E-07"
+        iyy="2.22963747944045E-05"
+        iyz="-1.24251026830724E-05"
+        izz="1.03187743356279E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_hinge_LU" />
+    <child
+      link="front_left_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="front_left_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.462196785873E-08 -0.00513048443546327 -0.00759988268323819"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197645" />
+      <inertia
+        ixx="0.0297078291872729"
+        ixy="1.9233216074978E-09"
+        ixz="-3.3790268230291E-10"
+        iyy="0.0204240923383516"
+        iyz="-0.013757048156433"
+        izz="0.00932114604753943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590773375001019 -0.390345036110258 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_hinge_LL" />
+    <child
+      link="front_left_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_base">
+    <inertial>
+      <origin
+        xyz="-5.72875080706581E-14 -4.92225278240221E-05 -7.29412370157334E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526659250823878" />
+      <inertia
+        ixx="1.57167590827311E-06"
+        ixy="6.98764716172851E-23"
+        ixz="1.03549426819276E-22"
+        iyy="1.66436600986045E-06"
+        iyz="1.37354397942877E-07"
+        izz="1.77521685073795E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/front_left_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_tube_L" />
+    <child
+      link="front_left_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_chassis">
+    <inertial>
+      <origin
+        xyz="4.41137195195118E-06 0.000918359101978572 2.60202222650552E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.664323169148684" />
+      <inertia
+        ixx="0.124497537684335"
+        ixy="1.0344037913E-07"
+        ixz="3.29978112884353E-09"
+        iyy="0.000272415804836349"
+        iyz="1.06181136709894E-05"
+        izz="0.124497811349336" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_chassis_j"
+    type="fixed">
+    <origin
+      xyz="0 1.5 0"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_chassis" />
+    <child
+      link="mid_left_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001226960566 -0.0538797737282946 0.0040775821785497"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216381" />
+      <inertia
+        ixx="2.15475302244532E-05"
+        ixy="4.08560226277666E-09"
+        ixz="3.50399838246521E-11"
+        iyy="2.48420344050468E-06"
+        iyz="4.38826489428073E-07"
+        izz="2.3915646135841E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="0.000591115875000048 -0.336809806641101 -0.024818510259375"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_chassis" />
+    <child
+      link="mid_left_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068636118195 0.0187349879182616 -0.0407234626927504"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149562489565409" />
+      <inertia
+        ixx="2.77383053237922E-05"
+        ixy="6.53538296214324E-08"
+        ixz="-1.41295179953746E-07"
+        iyy="2.61494686867024E-05"
+        iyz="9.6713919349343E-06"
+        izz="6.4719813629752E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_hinge_UU" />
+    <child
+      link="mid_left_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="mid_left_tube_U">
+    <inertial>
+      <origin
+        xyz="1.39309432878321E-08 -0.000642623368465767 0.00173034700927865"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041847" />
+      <inertia
+        ixx="0.0288040348348749"
+        ixy="1.02559630576947E-10"
+        ixz="9.55764874583068E-10"
+        iyy="0.025315686447648"
+        iyz="0.00938951251460667"
+        izz="0.00352488883961306" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999853 0.252035396430084 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_hinge_UL" />
+    <child
+      link="mid_left_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000588084340789496 -0.0149379000007281 0.0519264306818403"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124080543656932" />
+      <inertia
+        ixx="2.15480311497013E-05"
+        ixy="1.42460075676479E-09"
+        ixz="-3.7426146942602E-09"
+        iyy="2.16045137326279E-05"
+        iyz="6.66316689173787E-06"
+        izz="4.79656409042013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875000824 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_tube_U" />
+    <child
+      link="mid_left_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162331474195 -0.022221144798753 -0.0389713358297171"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300118627508" />
+      <inertia
+        ixx="2.77317575100478E-05"
+        ixy="-7.69471635969104E-08"
+        ixz="-1.35726947664713E-07"
+        iyy="2.22963747944019E-05"
+        iyz="-1.24251026830717E-05"
+        izz="1.03187743356258E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_hinge_LU" />
+    <child
+      link="mid_left_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="mid_left_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.46219123475788E-08 -0.00513048443560082 -0.00759988268322453"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197624" />
+      <inertia
+        ixx="0.0297078291872714"
+        ixy="1.92332161186926E-09"
+        ixz="-3.379026763916E-10"
+        iyy="0.0204240923383506"
+        iyz="-0.0137570481564323"
+        izz="0.00932114604753906" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590773375001019 -0.390345036110258 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_hinge_LL" />
+    <child
+      link="mid_left_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mid_left_base">
+    <inertial>
+      <origin
+        xyz="-1.77635683940025E-15 -4.92225281423231E-05 -7.29412372684202E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526659250823878" />
+      <inertia
+        ixx="1.57167590827311E-06"
+        ixy="6.98764716172851E-23"
+        ixz="1.03549426819276E-22"
+        iyy="1.66436600986045E-06"
+        iyz="1.37354397942877E-07"
+        izz="1.77521685073795E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/mid_left_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_tube_L" />
+    <child
+      link="mid_left_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_chassis">
+    <inertial>
+      <origin
+        xyz="5.03075278812659E-06 -0.449392937081784 6.51974849683601E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.26513041914869" />
+      <inertia
+        ixx="0.00799926371863007"
+        ixy="-1.96224566100892E-08"
+        ixz="3.31048764448456E-09"
+        iyy="0.000108767889226285"
+        iyz="2.83410622335792E-06"
+        izz="0.00799953806067319" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_chassis_j"
+    type="fixed">
+    <origin
+      xyz="0 1.5 0"
+      rpy="0 0 0" />
+    <parent
+      link="mid_left_chassis" />
+    <child
+      link="rear_left_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001226958346 -0.0538797737282954 0.0040775821785497"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216377" />
+      <inertia
+        ixx="2.15475302244526E-05"
+        ixy="4.0856022616967E-09"
+        ixz="3.50399839464439E-11"
+        iyy="2.48420344050472E-06"
+        iyz="4.38826489428027E-07"
+        izz="2.39156461358404E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="0.000591115875000048 -0.336809806641101 -0.0248185102593748"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_chassis" />
+    <child
+      link="rear_left_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068636116196 0.0187349879182555 -0.0407234626925717"
+        rpy="0 0 0" />
+      <mass
+        value="0.014956248956542" />
+      <inertia
+        ixx="2.77383053237938E-05"
+        ixy="6.53538296214964E-08"
+        ixz="-1.41295179953914E-07"
+        iyy="2.61494686867039E-05"
+        iyz="9.67139193493482E-06"
+        izz="6.47198136297561E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_hinge_UU" />
+    <child
+      link="rear_left_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="rear_left_tube_U">
+    <inertial>
+      <origin
+        xyz="1.39309432878321E-08 -0.000642623368459994 0.00173034700942842"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041871" />
+      <inertia
+        ixx="0.028804034834878"
+        ixy="1.02559629181379E-10"
+        ixz="9.55764878855471E-10"
+        iyy="0.0253156864476508"
+        iyz="0.00938951251460765"
+        izz="0.00352488883961346" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999853 0.252035396430084 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_hinge_UL" />
+    <child
+      link="rear_left_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000588084340789274 -0.0149379000007341 0.0519264306820197"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124080543656941" />
+      <inertia
+        ixx="2.15480311497028E-05"
+        ixy="1.42460075680349E-09"
+        ixz="-3.74261469444844E-09"
+        iyy="2.16045137326291E-05"
+        iyz="6.66316689173822E-06"
+        izz="4.79656409042017E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875000824 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_tube_U" />
+    <child
+      link="rear_left_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162331473529 -0.0222211447987606 -0.0389713358295417"
+        rpy="0 0 0" />
+      <mass
+        value="0.014930011862747" />
+      <inertia
+        ixx="2.77317575100445E-05"
+        ixy="-7.69471635972883E-08"
+        ixz="-1.35726947665315E-07"
+        iyy="2.22963747943986E-05"
+        iyz="-1.24251026830692E-05"
+        izz="1.0318774335625E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_hinge_LU" />
+    <child
+      link="rear_left_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="rear_left_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.46219136798464E-08 -0.00513048443557906 -0.00759988268309542"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197662" />
+      <inertia
+        ixx="0.029707829187274"
+        ixy="1.92332160371259E-09"
+        ixz="-3.37902688575158E-10"
+        iyy="0.0204240923383524"
+        iyz="-0.0137570481564336"
+        izz="0.00932114604753981" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590773375001019 -0.390345036110257 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_hinge_LL" />
+    <child
+      link="rear_left_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_left_base">
+    <inertial>
+      <origin
+        xyz="-1.33226762955019E-15 -4.92225280877001E-05 -7.29412370898963E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526659250823883" />
+      <inertia
+        ixx="1.57167590827313E-06"
+        ixy="6.98764716172855E-23"
+        ixz="1.03549426819277E-22"
+        iyy="1.66436600986047E-06"
+        iyz="1.37354397942872E-07"
+        izz="1.77521685073796E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_left_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="rear_left_tube_L" />
+    <child
+      link="rear_left_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_H_chassis">
+    <inertial>
+      <origin
+        xyz="0.01905 0 0.390400000000003"
+        rpy="0 0 0" />
+      <mass
+        value="0.887095000000013" />
+      <inertia
+        ixx="0.295880163598037"
+        ixy="-2.50003001095333E-20"
+        ixz="1.29026743307269E-18"
+        iyy="0.295880163598037"
+        iyz="1.56731957856012E-17"
+        izz="0.000363660529397919" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_H_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_H_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_H_chassis_j"
+    type="fixed">
+    <origin
+      xyz="-1.409446 -0.149999999999999 0"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="rear_left_chassis" />
+    <child
+      link="rear_H_chassis" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="rear_right_chassis">
+    <inertial>
+      <origin
+        xyz="5.03075278834864E-06 -0.449392937081783 6.51974849683601E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.265130419148696" />
+      <inertia
+        ixx="0.00799926371863022"
+        ixy="-1.96224566102308E-08"
+        ixz="3.31048764504338E-09"
+        iyy="0.000108767889226228"
+        iyz="2.83410622335302E-06"
+        izz="0.00799953806067339" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_chassis_j"
+    type="fixed">
+    <origin
+      xyz="-1.019054 1.95 2.54999999999993"
+      rpy="0 0 0" />
+    <parent
+      link="mid_right_chassis" />
+    <child
+      link="rear_right_chassis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_right_hinge_UU">
+    <inertial>
+      <origin
+        xyz="-0.000588001226952684 -0.0538797737282941 0.00407758217856435"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124075021216383" />
+      <inertia
+        ixx="2.15475302244529E-05"
+        ixy="4.0856022615334E-09"
+        ixz="3.50399840521019E-11"
+        iyy="2.48420344050467E-06"
+        iyz="4.3882648942815E-07"
+        izz="2.39156461358406E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_UU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_UU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_hinge_UU_j"
+    type="fixed">
+    <origin
+      xyz="0.000591115875000159 -0.336809806641101 -0.024818510259375"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_chassis" />
+    <child
+      link="rear_right_hinge_UU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_right_hinge_UL">
+    <inertial>
+      <origin
+        xyz="-0.000350068498507716 3.01873498325018 -0.0407234504477827"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149562464353106" />
+      <inertia
+        ixx="2.77382899355202E-05"
+        ixy="6.53537754375961E-08"
+        ixz="-1.41295041717211E-07"
+        iyy="2.61494553215485E-05"
+        iyz="9.67138676349038E-06"
+        izz="6.47197939264147E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_UL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_UL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_hinge_UL_j"
+    type="revolute">
+    <origin
+      xyz="0 -3 0"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_hinge_UU" />
+    <child
+      link="rear_right_hinge_UL" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="rear_right_tube_U">
+    <inertial>
+      <origin
+        xyz="1.393095427904E-08 -0.000642622397788006 0.0017303473794964"
+        rpy="0 0 0" />
+      <mass
+        value="0.182771131041898" />
+      <inertia
+        ixx="0.028804034834874"
+        ixy="1.0255963400442E-10"
+        ixz="9.55764862607878E-10"
+        iyy="0.0253156864199874"
+        iyz="0.00938951254670265"
+        izz="0.00352488886727283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_tube_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_tube_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_tube_U_j"
+    type="fixed">
+    <origin
+      xyz="-0.000590088374999964 3.25203539643008 -0.660642634271047"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_hinge_UL" />
+    <child
+      link="rear_right_tube_U" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_right_hinge_LU">
+    <inertial>
+      <origin
+        xyz="-0.000349162440858142 -0.0222211434168256 -0.038971336039367"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300101126433" />
+      <inertia
+        ixx="2.77317572300827E-05"
+        ixy="-7.69471573205977E-08"
+        ixz="-1.3572693923512E-07"
+        iyy="2.22963751320344E-05"
+        iyz="-1.24251025340891E-05"
+        izz="1.03187746968897E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_LU.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_LU.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_hinge_LU_j"
+    type="fixed">
+    <origin
+      xyz="0.000589745875001046 0.240357925630607 -0.664980149220171"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_tube_U" />
+    <child
+      link="rear_right_hinge_LU" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_right_hinge_LL">
+    <inertial>
+      <origin
+        xyz="-0.000349162440858142 -0.0222211434168256 -0.038971336039367"
+        rpy="0 0 0" />
+      <mass
+        value="0.0149300101126433" />
+      <inertia
+        ixx="2.77317572300827E-05"
+        ixy="-7.69471573205979E-08"
+        ixz="-1.3572693923512E-07"
+        iyy="2.22963751320344E-05"
+        iyz="-1.24251025340891E-05"
+        izz="1.03187746968897E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_LL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_hinge_LL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_hinge_LL_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_hinge_LU" />
+    <child
+      link="rear_right_hinge_LL" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="100"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="rear_right_tube_L">
+    <inertial>
+      <origin
+        xyz="-1.46219123475788E-08 -0.00513048159916174 -0.00759988253428268"
+        rpy="0 0 0" />
+      <mass
+        value="0.185067675197639" />
+      <inertia
+        ixx="0.0297078291884477"
+        ixy="1.92332160699823E-09"
+        ixz="-3.3790267532049E-10"
+        iyy="0.0204240923796869"
+        iyz="-0.0137570481406233"
+        izz="0.00932114600737894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_tube_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_tube_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_tube_L_j"
+    type="fixed">
+    <origin
+      xyz="-0.00059077337500113 -0.390345036110257 -0.58957722566556"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_hinge_LL" />
+    <child
+      link="rear_right_tube_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rear_right_base">
+    <inertial>
+      <origin
+        xyz="-6.99440505513849E-15 -4.92185453779825E-05 -7.29412395836793E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0052665925082388" />
+      <inertia
+        ixx="1.57167590827311E-06"
+        ixy="4.44722851416349E-23"
+        ixz="6.58915914700885E-23"
+        iyy="1.66436600945581E-06"
+        iyz="1.37354397779592E-07"
+        izz="1.77521685114261E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robo_assembly/meshes/rear_right_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_base_j"
+    type="fixed">
+    <origin
+      xyz="0 -0.398049308609462 -0.589856114075886"
+      rpy="0 0 0" />
+    <parent
+      link="rear_right_tube_L" />
+    <child
+      link="rear_right_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
